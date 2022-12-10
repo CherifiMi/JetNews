@@ -1,7 +1,6 @@
 package com.example.jetnews.model
 
 import androidx.annotation.DrawableRes
-import androidx.compose.ui.text.Paragraph
 
 data class Post(
     val id: String,
@@ -14,7 +13,6 @@ data class Post(
     @DrawableRes val imageId: Int,
     @DrawableRes val imageThumbId: Int
 )
-
 
 data class Metadata(
     val author: PostAuthor,
