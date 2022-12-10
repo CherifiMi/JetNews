@@ -13,7 +13,6 @@ import kotlinx.coroutines.withContext
 
 class BlockingFakePostsRepository : PostsRepository {
 
-    // for now, keep the favorites in memory
     private val favorites = MutableStateFlow<Set<String>>(setOf())
 
     override suspend fun getPost(postId: String?): Result<Post> {
